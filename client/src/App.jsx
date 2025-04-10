@@ -1,7 +1,12 @@
 import "./App.css";
+import HospitalPage from "./Pages/HospitalPage";
 
 function App() {
-  return <h1>The Beginning</h1>;
+  return ( 
+    <div>
+      <HospitalPage/>
+    </div>
+  );
 }
 
 export default App;

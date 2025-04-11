@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Govind Ballabh Pant Hospital",
+    "address": "1, Jawaharlal Nehru Marg, Raj Ghat, New Delhi",
+    "lat": 28.6392886,
+    "lng": 77.2344969,
+    "distance": "6.7 km",
+    "duration": "16 mins"
+  },
+  {
+    "name": "BLK-Max Super Speciality Hospital Delhi",
+    "address": "Pusa Road, Rajinder Nagar, New Delhi",
+    "lat": 28.6435455,
+    "lng": 77.17957679999999,
+    "distance": "7.9 km",
+    "duration": "21 mins"
+  },
+  {
+    "name": "Charak Palika Hospital",
+    "address": "C 7 Lane, Moti Bagh, New Delhi",
+    "lat": 28.5852879,
+    "lng": 77.177094,
+    "distance": "5.9 km",
+    "duration": "13 mins"
+  },
+  {
+    "name": "Shroff Eye Centre",
+    "address": "Building (1st floor, 105, Surya Kiran, 19, Kasturba Gandhi Marg, New Delhi",
+    "lat": 28.6271171,
+    "lng": 77.22183919999999,
+    "distance": "3.1 km",
+    "duration": "8 mins"
+  },
+  {
+    "name": "Medical India",
+    "address": "78-79, Scindia House, Connaught Place, New Delhi",
+    "lat": 28.6297044,
+    "lng": 77.22049799999999,
+    "distance": "3.6 km",
+    "duration": "10 mins"
+  },
+  {
+    "name": "Stopiles",
+    "address": "Pataudi House, New Delhi",
+    "lat": 28.6181929,
+    "lng": 77.2232709,
+    "distance": "2.6 km",
+    "duration": "6 mins"
+  },
+  {
+    "name": "Apollo Spectra Hospitals",
+    "address": "Metro Pillar No. 77, Block No. 34, opposite Bal Bharati Public School, Plot No. 3, Pusa Road, WEA, Karol Bagh, New Delhi",
+    "lat": 28.6452228,
+    "lng": 77.1955158,
+    "distance": "6.5 km",
+    "duration": "17 mins"
+  },
+  {
+    "name": "Dr. Ram Manohar Lohia Hospital",
+    "address": "near Gurudwara Bangla Sahib, Baba Kharak Singh Road, Connaught Place, New Delhi",
+    "lat": 28.625857,
+    "lng": 77.202697,
+    "distance": "3.5 km",
+    "duration": "8 mins"
+  },
+  {
+    "name": "Modern Health Clinic",
+    "address": "176, B, Lal Kuan, New Delhi",
+    "lat": 28.6353228,
+    "lng": 77.22496629999999,
+    "distance": "6.5 km",
+    "duration": "14 mins"
+  },
+  {
+    "name": "Central Government Health Scheme - Chanakyapuri",
+    "address": "D-II/257, 259, Vinay Marg, Chanakyapuri, New Delhi",
+    "lat": 28.5859396,
+    "lng": 77.1961805,
+    "distance": "4.8 km",
+    "duration": "11 mins"
+  },
+  {
+    "name": "CGHS Dispensary, North Avenue",
+    "address": "J5FX+3RJ, Bhanumati Road, North Avenue Road Area, Raisina Hills, New Delhi",
+    "lat": 28.62271269999999,
+    "lng": 77.19950349999999,
+    "distance": "3.5 km",
+    "duration": "8 mins"
+  },
+  {
+    "name": "ECS OT",
+    "address": "J6G3+83V, Fifth floor, ECS building, Dr RML Hospital, Type III, President's Estate, New Delhi",
+    "lat": 28.6258597,
+    "lng": 77.2026698,
+    "distance": "3.5 km",
+    "duration": "8 mins"
+  },
+  {
+    "name": "Anand Medical Stores",
+    "address": "Shop No 21, N.D.M.C Market, Shopping Center, Malcha Marg, Chanakyapuri, New Delhi",
+    "lat": 28.6025782,
+    "lng": 77.1867877,
+    "distance": "3.8 km",
+    "duration": "10 mins"
+  },
+  {
+    "name": "Ayush Medical",
+    "address": "110001, Presidents Estate Quarters, President's Estate, New Delhi",
+    "lat": 28.6208253,
+    "lng": 77.1950094,
+    "distance": "2.0 km",
+    "duration": "7 mins"
+  },
+  {
+    "name": "SCOPE COURSE",
+    "address": "J5FX+R5Q, Ram Manohar Lohia Hospital, Type III, Mukherjee Nagar, New Delhi",
+    "lat": 28.6245918,
+    "lng": 77.1979825,
+    "distance": "3.7 km",
+    "duration": "8 mins"
+  },
+  {
+    "name": "Religare Wellness",
+    "address": "59A,Ground Floor, Khan Market, Rabindra Nagar, New Delhi",
+    "lat": 28.6000912,
+    "lng": 77.2270425,
+    "distance": "2.9 km",
+    "duration": "9 mins"
+  },
+  {
+    "name": "THYROCARE DIAGNOSTIC CENTRE",
+    "address": "J62G+C4R, Khan Market Walking Plaza, Prithiviraj Market, Khan Market, Rabindra Nagar, New Delhi",
+    "lat": 28.6011091,
+    "lng": 77.2252664,
+    "distance": "2.5 km",
+    "duration": "6 mins"
+  },
+  {
+    "name": "NDMC Dispensary",
+    "address": "23/1, Shaheed Bhagat Singh Marg, DIZ Area, Connaught Place, New Delhi",
+    "lat": 28.6330732,
+    "lng": 77.2111537,
+    "distance": "4.1 km",
+    "duration": "11 mins"
+  },
+  {
+    "name": "SecureMedTrip",
+    "address": "9C, 9th Floor, Atma Ram House 1 Tolstoy Marg Connaught Place New, Delhi-110001, Delhi",
+    "lat": 28.62821689999999,
+    "lng": 77.22530610000001,
+    "distance": "3.4 km",
+    "duration": "10 mins"
+  },
+  {
+    "name": "Apollo Pharmacy - Connaught Place",
+    "address": "Block G, Connaught Place, New Delhi",
+    "lat": 28.6339233,
+    "lng": 77.217019,
+    "distance": "3.7 km",
+    "duration": "10 mins"
+  }
+]

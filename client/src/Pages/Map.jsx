@@ -1,7 +1,7 @@
 import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
-export default function Map() {
+export default function Map({ userLocation }) {
   return (
     <div className="flex h-screen w-screen">
       <div className="w-[25%] bg-black/80 text-white flex items-center justify-center"></div>

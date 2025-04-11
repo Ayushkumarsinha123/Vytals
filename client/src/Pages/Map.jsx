@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
-export default function Map({ userLocation }) {
+export default function Map() {
+  const getApi = async () => {
+    try {
+      //   const res = await axios.get(API, { headers: {} });
+      //   console.log(res);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    getApi();
+  }, []);
   return (
     <div className="flex h-screen w-screen">
       <div className="w-[25%] bg-black/80 text-white flex items-center justify-center"></div>

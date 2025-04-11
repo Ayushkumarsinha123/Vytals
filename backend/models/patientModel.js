@@ -7,9 +7,9 @@ const patientSchema = new mongoose.Schema(
       required: [true, "A patient must have a name"],
       trim: true,
     },
-    patientAge: {
-      type: Number,
-      required: [true, "A tour must have an age"],
+    patientBedType: {
+      type: String,
+      required: [true, "A patient must have an bed number"],
     },
     patientReasonForVisit: {
       type: String,

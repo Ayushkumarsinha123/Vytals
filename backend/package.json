@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "start:dev": "nodemon server.js",
-    "start:prod": "NODE_ENV=production nodemon server.js"
+    "start:prod": "NODE_ENV=production nodemon server.js",
+    "start:ws": "nodemon ws/ws.js"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,8 @@
     "morgan": "^1.10.0",
     "nodemon": "^3.1.7",
     "slugify": "^1.6.6",
-    "validator": "^13.12.0"
+    "uuid": "^11.1.0",
+    "validator": "^13.12.0",
+    "ws": "^8.18.1"
   }
 }

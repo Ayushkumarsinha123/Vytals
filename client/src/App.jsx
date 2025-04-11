@@ -7,6 +7,7 @@ import Map from "./Pages/Map";
 
 import "./App.css";
 import HospitalPage from "./Pages/HospitalPage";
+import { WebSocketProvider } from "./Contexts/WebSocketContext";
 
 function App() {
   const [userLocation, setUserLocation] = useState(null);
@@ -47,14 +48,16 @@ function App() {
 
   return (
     <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Map userLocation={userLocation} />} />
-          <Route path="/hospital" element={<HospitalPage />} />
-          <Route path="/hospitalAdmin" element={<HospitalAdminDashboard />} />
-          <Route path="/admin/beds/:bedType" element={<BedDetailsPage />} />
-        </Routes>
-      </BrowserRouter>
+      <WebSocketProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Map userLocation={userLocation} />} />
+            <Route path="/hospital" element={<HospitalPage />} />
+            <Route path="/hospitalAdmin" element={<HospitalAdminDashboard />} />
+            <Route path="/admin/beds/:bedType" element={<BedDetailsPage />} />
+          </Routes>
+        </BrowserRouter>
+      </WebSocketProvider>
     </div>
   );
 }

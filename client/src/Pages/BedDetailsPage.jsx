@@ -28,7 +28,9 @@ const BedDetailsPage = () => {
   // Generate a random patient and add to DB
   const generateRandomPatient = async () => {
     try {
-      const res = await axios.get(`/api/v1/patient/generate/${bedType}`);
+      const res = await axios.get(
+        `http://localhost:6010/api/v1/patient/generate/${bedType}`
+      );
       setPatients((prev) => [...prev, res.data.data.patient]);
     } catch (error) {
       console.error("Error generating patient:", error);
@@ -38,7 +40,7 @@ const BedDetailsPage = () => {
   // Delete patient by ID
   const releasePatient = async (id) => {
     try {
-      await axios.delete(`/api/v1/patient/${id}`);
+      await axios.delete(`http://localhost:6010/api/v1/patient/${id}`);
       setPatients((prev) => prev.filter((p) => p._id !== id));
     } catch (error) {
       console.error("Error releasing patient:", error);

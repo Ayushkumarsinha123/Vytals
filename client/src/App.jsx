@@ -1,5 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+<<<<<<< HEAD
 import { useEffect, useState } from "react";
+=======
+import HospitalAdminDashboard from "./Pages/AdminHospitalInfo";
+import BedDetailsPage from "./Pages/BedDetailsPage";
+>>>>>>> origin/dev
 
 import Map from "./Pages/Map";
 
@@ -49,6 +54,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Map userLocation={userLocation} />} />
           <Route path="/hospital" element={<HospitalPage />} />
+          <Route path="/hospitalAdmin" element={<HospitalAdminDashboard/>}/>
+          <Route path="/admin/beds/:bedType" element={<BedDetailsPage />} />
+        
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,11 +1,16 @@
-import React, { useEffect } from "react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import HospitalMap from "../Components/HospitalMap";
 
 export default function Map() {
+  const [hospitals, setHospitals] = useState([]);
+
   const getApi = async () => {
     try {
-      //   const res = await axios.get(API, { headers: {} });
-      //   console.log(res);
+      const res = await axios.get(
+        "http://localhost:6010/api/v1/get-nearest-hospitals"
+      );
+      setHospitals(res.data);
     } catch (err) {
       console.log(err);
     }
@@ -14,25 +19,14 @@ export default function Map() {
   useEffect(() => {
     getApi();
   }, []);
+
   return (
     <div className="flex h-screen w-screen">
-      <div className="w-[25%] bg-black/80 text-white flex items-center justify-center"></div>
+      <div className="w-[25%] bg-black/80 text-white flex items-center justify-center">
+        Nearest Hospitals
+      </div>
       <div className="w-[75%]">
-        <MapContainer
-          center={[51.505, -0.09]}
-          zoom={13}
-          scrollWheelZoom={false}
-        >
-          <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          <Marker position={[51.505, -0.09]}>
-            <Popup>
-              A pretty CSS3 popup. <br /> Easily customizable.
-            </Popup>
-          </Marker>
-        </MapContainer>
+        <HospitalMap hospitals={hospitals} />
       </div>
     </div>
   );

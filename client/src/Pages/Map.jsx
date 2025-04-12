@@ -6,16 +6,19 @@ import HospitalMap from "../Components/HospitalMap";
 
 import { slugify } from "../utils/slugify";
 
-export default function Map() {
+export default function Map({ userLocation = { lat: 28.4209, lng: 77.5267 } }) {
   const [hospitals, setHospitals] = useState([]);
   const [nearestHospitals, setNearestHospitals] = useState([]);
 
   // Fetch all hospitals
   const getApi = async () => {
+    if (!userLocation) return;
+
     try {
       const res = await axios.get(
-        "http://localhost:6010/api/v1/get-nearest-hospitals"
+        `http://localhost:6010/api/v1/get-nearest-hospitals?lat=${userLocation.lat}&lng=${userLocation.lng}`
       );
+
       setHospitals(res.data);
     } catch (err) {
       console.error("Error fetching hospitals:", err);
@@ -27,7 +30,7 @@ export default function Map() {
     const fetchHospitals = async () => {
       try {
         const res = await fetch(
-          "http://localhost:6010/api/v1/get-nearest-hospitals/distances"
+          `http://localhost:6010/api/v1/get-nearest-hospitals/distances?lat=${userLocation.lat}&lng=${userLocation.lng}`
         );
         const data = await res.json();
 
@@ -50,11 +53,13 @@ export default function Map() {
     };
 
     fetchHospitals();
-  }, []);
+  }, [userLocation]);
 
   useEffect(() => {
-    getApi();
-  }, []);
+    if (userLocation && userLocation.lat && userLocation.lng) {
+      getApi();
+    }
+  }, [userLocation]);
 
   return (
     <div className="flex h-screen w-screen">

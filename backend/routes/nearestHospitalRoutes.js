@@ -10,9 +10,6 @@ const router = express.Router();
 // GOOGLE API KEY
 const API_KEY = "AIzaSyBBugYIWRKupAnXy04i3ipJkewyMqx-eSI";
 
-// NEAREST HOSPITALS API
-const NEAREST_HOSPITALS_API = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=28.6139,77.2090&radius=5000&type=hospital&key=${API_KEY}`;
-
 // NEAREST HOSPITALS DISTANCES
 const NEAREST_HOSPITALS_DISTANCES_API = `https://maps.googleapis.com/maps/api/distancematrix/json?
 origins=28.6139,77.2090
@@ -22,6 +19,9 @@ origins=28.6139,77.2090
 router.get(
   "/",
   catchAsync(async (req, res, next) => {
+    // NEAREST HOSPITALS API
+    const NEAREST_HOSPITALS_API = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=28.4209275,77.5241642&radius=5000&type=hospital&key=${API_KEY}`;
+
     // API USAGE -----------------------------------------
     // const nearestHospitals = await axios.get(NEAREST_HOSPITALS_API);
     // const hospitals = nearestHospitals.data.results.map((place) => ({
@@ -32,7 +32,12 @@ router.get(
     // }));
     // ----------------------------------------------------
 
-    const filePath = path.join(__dirname, "..", "dev-data", "hospitals.json");
+    const filePath = path.join(
+      __dirname,
+      "..",
+      "dev-data",
+      "hospitals-details.json"
+    );
 
     fs.readFile(filePath, "utf8", (err, data) => {
       if (err) {
@@ -41,7 +46,15 @@ router.get(
       }
 
       try {
-        const hospitals = JSON.parse(data);
+        let hospitals = JSON.parse(data);
+
+        // Getting important INFO
+        hospitals = hospitals.map((place) => ({
+          name: place.name,
+          address: place.vicinity,
+          lat: place.geometry.location.lat,
+          lng: place.geometry.location.lng,
+        }));
 
         res.status(200).json(hospitals);
       } catch (e) {

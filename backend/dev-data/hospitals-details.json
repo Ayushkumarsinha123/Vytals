@@ -1,0 +1,619 @@
+[
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 28.4345188, "lng": 77.5204724 },
+      "viewport": {
+        "northeast": { "lat": 28.4359774302915, "lng": 77.52211608029151 },
+        "southwest": { "lat": 28.4332794697085, "lng": 77.51941811970849 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+    "icon_background_color": "#F88181",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+    "name": "Heart of India",
+    "photos": [
+      {
+        "height": 2448,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/112869450833316927926\">Sameer lamba</a>"
+        ],
+        "photo_reference": "AeeoHcKvMRLvHxcXHgiB78NimLw7leasRbnamuDyMQdxHwxUC9MrgfRB2PEHmGlOZTfHhglg92FHAZlItziQzbWqFYM3hCDBd7PcLBedYZdzi67u5bAK27iefiYBZTbk6Kkc1BwnG9T6whfdgvSgy8rqBzm4jkq8IjVbqCRrwXtmoABCcVzabqeuduOVli8s1J0JNuOlzYPJicZ4lResNVyYWiKXl9PYF-Q4X7CyK8OBr6OCCTWxh349xyJggFbNH8vaUFM_015NWrVDtHDkdojQR9jGlI_mVcOwFdGOHJscJkU5RF9hnpb6ZDjoPcCfaTxxlChyrjrOAj1p4bru5sHU0GlKze48g3UrKb5CQBzQUuqitr1JOmjjgmanAa6aF3CP1Jlgqm-r7FF9Choj9udqOxp2Sf9cyufDRpDGiv1nmJwsdSOBVfhiQp0ERzqwjld24DYZqZEuibbM5FPVYzPsCQorZz9XU6iQZGcO-bfHq8fDobbqYswx5IeqC159MOI6v56cV_INBK01ozhOl-iztr1pZ3PyHGsq5tblG5TmIJMRx_ABwNIg_q81C_aGmZ7oKxUjRmg6QmKxhJ_v_8Ir5PE7bkYmsepZRHvYXyNcK8GOqBi4rsfL9aPwJaRVE-jM07rOcA",
+        "width": 3264
+      }
+    ],
+    "place_id": "ChIJn8Vj7U3ADDkR-d1EBv_1g1I",
+    "rating": 4.6,
+    "reference": "ChIJn8Vj7U3ADDkR-d1EBv_1g1I",
+    "scope": "GOOGLE",
+    "types": ["hospital", "health", "point_of_interest", "establishment"],
+    "user_ratings_total": 5,
+    "vicinity": "CGMC+R55, Block I, Lagerstroemia Estate, Chi IV, Greater Noida"
+  },
+  {
+    "business_status": "CLOSED_TEMPORARILY",
+    "geometry": {
+      "location": { "lat": 28.43681089999999, "lng": 77.53755199999999 },
+      "viewport": {
+        "northeast": { "lat": 28.4380534802915, "lng": 77.5388596302915 },
+        "southwest": { "lat": 28.4353555197085, "lng": 77.53616166970848 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+    "icon_background_color": "#F88181",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+    "name": "Health Care Centre",
+    "permanently_closed": true,
+    "place_id": "ChIJPQAAwELADDkR_HUTZIJ_t40",
+    "reference": "ChIJPQAAwELADDkR_HUTZIJ_t40",
+    "scope": "GOOGLE",
+    "types": [
+      "hospital",
+      "doctor",
+      "health",
+      "point_of_interest",
+      "establishment"
+    ],
+    "vicinity": "CGPQ+P2F, near NCR Diagnostic Centre, University Road, Kasna Village, Greater Noida"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 28.4456619, "lng": 77.50868059999999 },
+      "viewport": {
+        "northeast": { "lat": 28.4471512802915, "lng": 77.5100726302915 },
+        "southwest": { "lat": 28.4444533197085, "lng": 77.5073746697085 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+    "icon_background_color": "#F88181",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+    "name": "ECHS POLYCLINIC",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 3468,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110759897701253206868\">Aniket Singh</a>"
+        ],
+        "photo_reference": "AeeoHcJ31xKWt58iYoQFNk4QvUAQfjsz7TiNSdMvwcuUz0QPqtcV7WykiIEpHDTDCG0KsNB0GuaW3T7mjgj0A6Lo3I00oTHY-as40HEghkqmnvhYUfxrXovjHK8Ei4Ooh2fFLAcAWMrLjpwmTDfs3T5P9VBZ3qEEcT2lBi0mnppNqRAW-iCajzqzqfo8aR3ZpYJ8Z-dpug3t2D63r8CDb2xFq3x6feAtFccl6m4VWnEP0Gl9xMco0a4AW4S0ZLvPV_ULI3EGXcsFuvsF3LBEsD-4DiNPIT_BuvmJGPQ5mrSAzPXotEpXzdhCEGgsg_ZTL7TWPSlPLO6Di42Q7NaS3kPoPMPmqQ9Ag6lg7Q8QAROYpamINuqcOrk_Pt9_QgE0L-X9HpPeaRKlM02KaRqbMpA5t9fHy5ZJPyNRB9LyLcvHZMoSc9dJ8xQ-gRT_gmW84Mb_1WlOMP6E7yMACJ05QFd4c5YU5akapkPUhf3ML81x9EGAusTCOqu6TIv4vhxutEA48JDQ0RtGF69y75Mbqw29f2QMf5z025HXQqLN4OC8gIEKqAWONMoRaZOqO3AZvA5zqPDQ00F2GEvtkaZemmydFAkUeZQaWjEhm_eWCWBq4kLt4A8BLa32N8T6cuQaMMgpkRwX_qSI",
+        "width": 4624
+      }
+    ],
+    "place_id": "ChIJMZhtv8nBDDkRXRVypSk0CK4",
+    "rating": 4.2,
+    "reference": "ChIJMZhtv8nBDDkRXRVypSk0CK4",
+    "scope": "GOOGLE",
+    "types": ["hospital", "health", "point_of_interest", "establishment"],
+    "user_ratings_total": 66,
+    "vicinity": "CGW5+7F7, AWHO Road, Chi II, Gurjinder"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 28.4512204, "lng": 77.5107524 },
+      "viewport": {
+        "northeast": { "lat": 28.4525019302915, "lng": 77.5121249802915 },
+        "southwest": { "lat": 28.4498039697085, "lng": 77.5094270197085 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Dr Lal PathLabs – Patient Service Centre",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/109543214200216209952\">Sumit Kumar</a>"
+        ],
+        "photo_reference": "AeeoHcLC-5KXh8V39SHStrfOFEEsb5RLWRemzqHRkafoKuxNcsYkuJy3PIsllo1FXZr4l-5LjXV-dmOgLJZCmXzw1i1gpRLmOr8XP88mSb8BnDSfpPqIHO9IMHI2YNFMZR_3G-c5WWQhSSb0N87w3-1-MZ86j9wmqv17RaLOMuXk-E0zheedPxaReYFQVJRRfasICHhGzreY8C3OzXMkviwn_iMwV1sJk5V5Q9rfSEZmR7Ct9KSj9Tqg8LfOWqnKyACmVHdyeCniUVnr75u6Xpl-R7YBVPfpJoUp18sm6UvR0xfgQbLr4jYGuvrMwLrwTa9GPyNjYnnE_Rj9lbyhBjYdz-ELRJhdaxpvrv-E_EjmlYGGTT3lqhSrBzg7bYzHvCVDhdl1bUnLC0VlYQGVmIaZrJsSGVOejzO0gjisqmFiFbAvDVrXJrXKvwmPbfe79Zxyn8Jy6zx__Wdn85Di1kAsVW3Y1nj1P0wKkZ7q701E34gZMTEDrY09qkgjcMSt_IcXWSNZo_Xf-O_QMK-sEC0a52p5nAf6LDBw-elYwVNenmikYRGeo-mlCZ2NhXYH9j5K3489ARb72C16t5K3QHDR3eEpSOukiZefGcZ-tNmM2hcaegXcipt6RSA4TOPi_8nt",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJZUZRl87BDDkRK2L-fOZWv-M",
+    "plus_code": {
+      "compound_code": "FG26+F8 Greater Noida, Uttar Pradesh, India",
+      "global_code": "7JWVFG26+F8"
+    },
+    "rating": 4.3,
+    "reference": "ChIJZUZRl87BDDkRK2L-fOZWv-M",
+    "scope": "GOOGLE",
+    "types": ["hospital", "health", "point_of_interest", "establishment"],
+    "user_ratings_total": 46,
+    "vicinity": "near YATHARTH WELLNESS HOSPITAL, Ns-38, Sector- Omega-1,SBI Complex,Near Amrapali Hospital, Builders Area Greate, near YATHARTH WELLNESS HOSPITAL, Greater Noida"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 28.4581539, "lng": 77.54357739999999 },
+      "viewport": {
+        "northeast": { "lat": 28.4595293802915, "lng": 77.54499863029149 },
+        "southwest": { "lat": 28.4568314197085, "lng": 77.54230066970848 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+    "icon_background_color": "#F88181",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+    "name": "Ivory hospital",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2184,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/107495681103975387301\">SUNIL KUMAR GARG</a>"
+        ],
+        "photo_reference": "AeeoHcK5kY0hcrV3qjVhI8sUWGbxfb3iyEhl_FU_RqCfgjMU5kuD4RkjH_o88mI6UVAhNls63IAq2JTUVJQXcSQ4gUJzkac_VJaFY9KC4uGzF3XdX6uvNJzWp8uLWPvmAd7stMXfLs7Q-ePwx4Q0FIX9YqOlXl53U-g9fwIyCdNsNVagmeXucVpncanIymA-KHqLj9wPZyFGw_TTaYDiZE2-jNxVCPGin4ymV-zCf-uqp9q0iYwxy7_F8I5nxZnUQ2XJqXVxJ9YMkR6QuqbEokxeExUpgNZreZCEyzJSOR0AeIL1uO-lJzbOKW0TZ7Cfw09VRnim3C4g0yHYAELGvA43tEFeqOhwZKLAxRXAbHUDZFMyEFoG-A7qVkK1dazg58qgcfuH_W9DPPHSS4SX3u7oK4Awb9kH-pjhdnG5nfUWEt6cGQOzp5xoRSIc9WxWK3LRQt7_PjCB5kVgtyAPqmTUjaGwdb7O5geAR6JS9NwRQ5yGH1sM646Elwl0cgidT4b5yng6DnDW0gBmfGTGlgcZIwPIqmgGgrl5qMfnH4Uz2cd0uJzevhXNOcKdJhL6SpxPiuh8fdP2Aof7D2rDa5rhtczrW_D3eFtVfbiv4ERL3Q5CUcCMrIzMWYm_5x1uhh_S",
+        "width": 4608
+      }
+    ],
+    "place_id": "ChIJeS-6XBfADDkR426L7wR_3yU",
+    "plus_code": {
+      "compound_code": "FG5V+7C Greater Noida, Uttar Pradesh, India",
+      "global_code": "7JWVFG5V+7C"
+    },
+    "rating": 3.3,
+    "reference": "ChIJeS-6XBfADDkR426L7wR_3yU",
+    "scope": "GOOGLE",
+    "types": ["hospital", "health", "point_of_interest", "establishment"],
+    "user_ratings_total": 194,
+    "vicinity": "NH-25, Pocket, Greater Noida, Gautam Budh Nagar, Sector 36, RHO I, Greater Noida"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 28.4517374, "lng": 77.5095437 },
+      "viewport": {
+        "northeast": { "lat": 28.4529548802915, "lng": 77.51081083029149 },
+        "southwest": { "lat": 28.4502569197085, "lng": 77.50811286970848 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+    "icon_background_color": "#F88181",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+    "name": "Yatharth Super Speciality Hospital, Greater Noida",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 2181,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/107727521299731676934\">Tasveer Hasan</a>"
+        ],
+        "photo_reference": "AeeoHcKXeTGxelTkmqyHdL5cXWlfuRoC-ofOsjSgz54y5s2hBjTelOG645sFfKZpbeKfxSFR-x2GCletWZse1D2J7ZPe_IZIINbtqJxpWQJvH9MpkVy5Flec4k9K_RrpYMMEDZUK7H4BlV7ybjE83SnhkkY7VxV4DVq0yJn1M0ZZZ5zSkJWgvPrqD8wib_lfa6ghq6F8vbuCdwG7ayIAtz1CY3dZCEzyPpaoEbEcW4T3Skkg6wmfdeMus6LtfoM4mEzSrQyef0u4yoCCttFw8PaCYND1HV2Rwf2PbGE1bk75a4BuD0AnTANMneduff3BSS14sQc3xLZXvIyDp9BYF0OB0Kc0U5sFd2zoosUVV1rIbXOs1sBcaRsCYtd8K2EJSJKaEqqa6aINa6Y1rxUxxQFXW_nauEKsr0q8o6J5N0ASF6zd5CUshrDy30BnGXgdQaOf8P4HsdqQpKB86rY2Ef_NAuw7Clj0CBEt_Fyz-dAOMEiqr5HVFMW_Y1ardeEwZftinQeojfgkrqF3otx5HZuWn6pVEWnkqsW9Z-yDiwa_7oe13FCsm1XU2Gj39Wd5pb0bsFQluV4aQzqSkeihgwMdBDB7ODUzrtVjAEnsOiqgcDN5Yo_GwcOdZwL5eKFMFrPXBlhNq6UP",
+        "width": 3139
+      }
+    ],
+    "place_id": "ChIJ0-_jmc7BDDkRegYeHoF4zv4",
+    "plus_code": {
+      "compound_code": "FG25+MR Greater Noida, Uttar Pradesh, India",
+      "global_code": "7JWVFG25+MR"
+    },
+    "rating": 4.6,
+    "reference": "ChIJ0-_jmc7BDDkRegYeHoF4zv4",
+    "scope": "GOOGLE",
+    "types": ["hospital", "health", "point_of_interest", "establishment"],
+    "user_ratings_total": 9350,
+    "vicinity": "Plot No 32, Omega-I, Greater Noida"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 28.427664, "lng": 77.52835999999999 },
+      "viewport": {
+        "northeast": { "lat": 28.4290130802915, "lng": 77.5297093302915 },
+        "southwest": { "lat": 28.4263151197085, "lng": 77.52701136970849 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+    "icon_background_color": "#F88181",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+    "name": "GBU Dispensary",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 4080,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111443829526343200479\">Anirudh Bishnoi</a>"
+        ],
+        "photo_reference": "AeeoHcIzM9YcbXrkNSSVcaGabES-KTG7aIW8ZeyYzTojgdtXrYSj_MpkPzrzD64wRt3G5V5MQtj0Hun-dtiYtPFG07HF7ny7iqAsPlFlbXQyndhH29kQUyFHP06n55f9IiTh35vS4yeLvzQyI_GAcDSAq580JwCEtHy_JGhpKBh5BA6zPwPODCdsDQdxR8NzPKIFynXRNwzsSnPWHmDKfBIveleDjQW90hc38_js0IdCyoNZQR5SybY0P7jTXFl4wYIZp_lfUE0AQG0gyITHdnJdKT5haQPtdU31v-OyaIN1JO74iEAOtI7BNYjKMlUYDm0xNEJ6IRzOZ0AXSG6jhORdFlFf2yVjHCXt7QHi0AWCS3PbmZPQ7BUeaMQ0NlJHGC-AMpmc0W8hMzLrPa9f0Urz4mvzcoBl7TuzzsRgiV0IcAhUe_6qL4xrZI7hFuP7Mi7xrjX_Twsc0YktdD_ZHHhv9XIN2zCEKOK_Xq-jsMU1eCDYLOgzY6wrMm_tfXeVkF6OyV92IsMeOao8oi1SM6L9cw0u-3pXo4PiGzDO8PzdZTdOsyJTbe1RVlTen9iESVTmoqlorHuKBz42amsDa5bvVsXpz4vkeOwmqlWF0ujfLn3pJGde8W3rII56NWvEw3EJeMPz3uor",
+        "width": 3060
+      }
+    ],
+    "place_id": "ChIJizwSldbBDDkR7VkUbNin-xM",
+    "plus_code": {
+      "compound_code": "CGHH+38 Greater Noida, Uttar Pradesh, India",
+      "global_code": "7JWVCGHH+38"
+    },
+    "rating": 4.5,
+    "reference": "ChIJizwSldbBDDkR7VkUbNin-xM",
+    "scope": "GOOGLE",
+    "types": ["hospital", "health", "point_of_interest", "establishment"],
+    "user_ratings_total": 2,
+    "vicinity": "GAUTAM BUDDHA UNIVERSITY, Greater Noida"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 28.4163053, "lng": 77.51679539999999 },
+      "viewport": {
+        "northeast": { "lat": 28.4177026802915, "lng": 77.51812688029149 },
+        "southwest": { "lat": 28.4150047197085, "lng": 77.51542891970848 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+    "icon_background_color": "#F88181",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+    "name": "JMD Clinic",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/114896846583221893161\">Dr. Sharad Sinha</a>"
+        ],
+        "photo_reference": "AeeoHcIlclTUCJlVZEK-Eg4g_8eYkl5JT1rX8tNN_Pln0s5T7B_vHlFIWjFh5L-DbU9p2OkWfgkzSJWquZHPH2292HxaVctN-upnG2ZtyyCfDH17u1PIazneu70KIK1Jf3qzJ7npr84rt1EFG-GNbP-VkUqpm2Ig9cROgO_pVeNz2cBqfxaCAeV7qk0Axq2ExDKb9eLQ7Mnaj4RY1wY6f5qQ4uFGg36bJbJEGm3qouEtKXDlYmM_DrwcGCrEFyM9B3CLTHkplbrariPj4XfZByjYE9cXjh_f0t9iHbTVoykmjza4UYeWXzF2bgKcVR4u0JZJW6UBqNbie_zkF87IKnYLtSfjjON4niCKjPY7GtddWu8XuxVVdwBJJieQuuQvCesQwBDU589PgCR3h8wN4WauFcXArik6C2CJQMYJ_R3jiTCHoTHpMxlO644tsvyw-ChONqhe0JBhZvqjQDEv3758nmZ0JMBxFBEoi_KXq8TlBAwP7juSKbdrQVcADecNr0SaQgzLi5OXinnz3_f1OvuGuEWjo-0PggvEpF4bZDwhSq7x2MPIvAP0zWhBwqkg6SJMzkAdjekPFqCWYRveq2Rsq27Z0O9IEf-ZKfTopk9im8X0JmiYB6pA0SZuaLDX-uXnqf5pLpyg",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJifrnIJ3BDDkR5V4v5Lym8Ow",
+    "plus_code": {
+      "compound_code": "CG88+GP Greater Noida, Uttar Pradesh, India",
+      "global_code": "7JWVCG88+GP"
+    },
+    "reference": "ChIJifrnIJ3BDDkR5V4v5Lym8Ow",
+    "scope": "GOOGLE",
+    "types": ["hospital", "health", "point_of_interest", "establishment"],
+    "vicinity": "Lal building, near Gate No 2, B-52, Omicron I, Greater Noida"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 28.428708, "lng": 77.5262669 },
+      "viewport": {
+        "northeast": { "lat": 28.4301092302915, "lng": 77.5276764302915 },
+        "southwest": { "lat": 28.4274112697085, "lng": 77.5249784697085 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+    "icon_background_color": "#F88181",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+    "name": "Sudhir super speciality hospital",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 4160,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/105130305362022193705\">Pankaj Kashyap</a>"
+        ],
+        "photo_reference": "AeeoHcIIseUcb8c-PiQ9_ZgLo3TOP0dxyN946lslfizx-xNY9aJW48eiyruhb4Su7iyekQwjhYHyzNIKUt__f2xhlAtvb8AbfVNdRQSH1NQSfmkUTzcqmmcQVfGVj1hEFkbMM5zE1Uw5b5AGiCtoXd8GwmTL6clOMrfpivZZAUw7HTU9mbM2pfMha6yMjCtihsw2KLq-xLk1NQujj8Eo6ZDYxapuTj7GjpDrD8utviBqSjmfDlTLLlqUxHrTOxfMpGLmVVE5ZknWBj27bYlE8kRdBYPL0TaiANNI6mV0pmD8A1_y2dC92idXhnjWGoACTE0HqbG5c_rgouv8cinQuco6ToK9FHJMLLGZOm0j70_8-ETjkCxppo2XTq7QodcqelmveVcAtdQhhvMsYVqxj39ZYbRAvTlakrpFwugjHoNzKj_x2we5iKpSbAvB-Ig1OgXkgvkKXF7SafXBOcL_5QGRukmIOQdxhRaUORbALpwYzjl_B4JXvtd0tg78JQVGNosSbfrnn_t8IcoCaSJH_CpYbpvG4FirNHk9bnwD8A1rWXbRvF2PtBRjAv30IBwdC-VL8gUEKOIrpSs-Bd5hJRJ13tJMfdmEAR8cl6CpnpG_yKQQjHeiEOh4EjzajbzM8aQSdeC7YOOWkNRebykuaNfe3xR7Y7s",
+        "width": 3120
+      }
+    ],
+    "place_id": "ChIJwzrUwbTBDDkRgLEzUUEkM6s",
+    "plus_code": {
+      "compound_code": "CGHG+FG Greater Noida, Uttar Pradesh, India",
+      "global_code": "7JWVCGHG+FG"
+    },
+    "rating": 5,
+    "reference": "ChIJwzrUwbTBDDkRgLEzUUEkM6s",
+    "scope": "GOOGLE",
+    "types": ["hospital", "health", "point_of_interest", "establishment"],
+    "user_ratings_total": 7,
+    "vicinity": "Alpha 2nd, near Gate No 5, plot no.04, Greater Noida"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 28.42136709999999, "lng": 77.5128592 },
+      "viewport": {
+        "northeast": { "lat": 28.4227651302915, "lng": 77.5143758802915 },
+        "southwest": { "lat": 28.42006716970849, "lng": 77.51167791970848 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+    "icon_background_color": "#F88181",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+    "name": "Hindu Crematorium",
+    "photos": [
+      {
+        "height": 4624,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/100358874922781974462\">DILIP JAISWAL</a>"
+        ],
+        "photo_reference": "AeeoHcIq3HuOCMbdsRnZ1SL-mWP62gI9K_j2XNVQ6LiY5ZbAnN_brpAchJeeGS_S9cP4f-phd4RXNCMLYhDNB9nbwZQJAB9ANgH6-BvPShD_gmZgOA9VbsFxyVdCnb6LwfJmxaemDOcoUrUtrt3xfcRUFOdnS4UBgW9t55G7x4mmZqvQgaciMSJ17O2bn-wgiHBxlaIMvm4Lisi3RbO7nbXCJLrZa25mJJ2Y2av1JJ15xOU4SyNHbasI9NFnqUFwSfiK4gx9cPF9p70YEEaleHb8cCuk7Z9i6NoLdYURKtQojxS979sTavPzKjatpw8V8jbEs3tL5yTB5QvOx76V6fsTDDU4p2gM28Uic53AF0JTiitD3e47o_M4ye0DO0sg3Ay6nYumCdDfXP8byKLSQZLuuE5_8A-mudb2I-gf9wA8Sirw2vwcppPFghKvBaJq51f6Z1GldZYbW6_BZP4_0yCRCmf2JN5e9admLBriZlaha4tX7C8BKyPdQNb4rMmMbdvL7ifvjjUYR-KLwgOpYh9He4QNEuT2WGpOD_T5VK9xtoRxw9OKeeKqzdjVCIkW12pkUUqjA1wUPCQYYeYFAjONlI3ydsGIrVIzB0YAs7XJ-DBI_q00Oxq7-mix3JQ1j-xbGWe9EUxO",
+        "width": 3468
+      }
+    ],
+    "place_id": "ChIJK4c6Y4zBDDkRypGkoSIBxb4",
+    "reference": "ChIJK4c6Y4zBDDkRypGkoSIBxb4",
+    "scope": "GOOGLE",
+    "types": ["hospital", "health", "point_of_interest", "establishment"],
+    "vicinity": "CGC7+G4X, Greater Noida"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 28.4328367, "lng": 77.5320749 },
+      "viewport": {
+        "northeast": { "lat": 28.4341538802915, "lng": 77.5333442302915 },
+        "southwest": { "lat": 28.4314559197085, "lng": 77.53064626970848 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+    "icon_background_color": "#F88181",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+    "name": "GIMS Centre for Medical Innovation",
+    "opening_hours": { "open_now": false },
+    "place_id": "ChIJ-5r7BgDBDDkRT8We-q4w-T8",
+    "plus_code": {
+      "compound_code": "CGMJ+4R Greater Noida, Uttar Pradesh, India",
+      "global_code": "7JWVCGMJ+4R"
+    },
+    "reference": "ChIJ-5r7BgDBDDkRT8We-q4w-T8",
+    "scope": "GOOGLE",
+    "types": ["hospital", "health", "point_of_interest", "establishment"],
+    "vicinity": "4th Floor, GIMS Hospital, Greater Noida"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 28.4328367, "lng": 77.5320749 },
+      "viewport": {
+        "northeast": { "lat": 28.4341538802915, "lng": 77.5333442302915 },
+        "southwest": { "lat": 28.4314559197085, "lng": 77.53064626970848 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+    "icon_background_color": "#F88181",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+    "name": "GIMS hospital greater noida UP",
+    "photos": [
+      {
+        "height": 2250,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/112687977812723975030\">Shubham Kumar</a>"
+        ],
+        "photo_reference": "AeeoHcL5xDhovan4LlZG1kiISK00dUw3ABRK9y5zNHPBK9oWemiYIu63xi7Cyq494-x8u2KXrVruCAdScgeqq4MF15uU9MrduWGPfyk2A7u87YgznP2zgrwGcP8opbBN9jS44gmFStPSa7utcSa6vT6JVBYXWUVdmPo2V-8voMeBJlc4SzBDcLSNvhzZGo0hNR0zXFu0v3wC5hX0T1lQgjnhTI_TF126etGVYQ9cE_L5j6Z94COuT3CgDJs0oPNIxcAxQ2CLnVa_ApRYS8tkzLEec4v3zgicj5o0Qxs5jehkFalNwa3fa_45p82b3dT3Kn9q9HUKoi-pFegrI5nNtBi8Vy_ULI8FAh83f_dmPv5cQDuggWqJoyppZkHFB_RQrbeFk_9LdHYabS9nOC43v0XL-x3m2K0rO3RtdaXl04liEraioMCfyIxNVD8tW4sY_yFU6x0vUEc4EIGtivE8sM9Iq15xiwlAa-uJNPoOj-_qPcmEQEaH0J-WZrR9YKlr0JE8Vfw0EB9rMdhEVDBV2AwrEjvX719SAZIdyhDaafsZT4xRzC6TLN25y-rOIcpP9oENYQjjVtOOBdysdEnHyhGkJPJM4gzJ1SRPhChDrxQddpaktSK-7rtqz-74rJi35uAupA--VQ",
+        "width": 4000
+      }
+    ],
+    "place_id": "ChIJo0RmbdrBDDkRvzu-VZx7k5s",
+    "rating": 4,
+    "reference": "ChIJo0RmbdrBDDkRvzu-VZx7k5s",
+    "scope": "GOOGLE",
+    "types": ["hospital", "health", "point_of_interest", "establishment"],
+    "user_ratings_total": 278,
+    "vicinity": "CGMJ+4RP, Unnamed Road, Greater Noida"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 28.433785, "lng": 77.5173174 },
+      "viewport": {
+        "northeast": { "lat": 28.4351327302915, "lng": 77.51866318029151 },
+        "southwest": { "lat": 28.43243476970849, "lng": 77.5159652197085 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+    "icon_background_color": "#F88181",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+    "name": "Chi phi nasa mukti kendre",
+    "place_id": "ChIJDV2X1HvBDDkRNvr0tt_gRYk",
+    "rating": 5,
+    "reference": "ChIJDV2X1HvBDDkRNvr0tt_gRYk",
+    "scope": "GOOGLE",
+    "types": ["hospital", "health", "point_of_interest", "establishment"],
+    "user_ratings_total": 2,
+    "vicinity": "CGM8+GW8, Lagerstroemia Estate, Chi IV, Greater Noida"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 28.4335736, "lng": 77.5325383 },
+      "viewport": {
+        "northeast": { "lat": 28.4349681302915, "lng": 77.5339053802915 },
+        "southwest": { "lat": 28.4322701697085, "lng": 77.5312074197085 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+    "icon_background_color": "#F88181",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+    "name": "ADVANCED CENTRE OF DIABETES, GIMS GREATER NOIDA",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/104089555640501336611\">Deepak Sharma</a>"
+        ],
+        "photo_reference": "AeeoHcLGHdQjnLTlOpZgnCGVI-tnVjXqN6J87Up6MUxVoifiPXXgmeAmc1dbj2KjWDJOgFuXlyOjkr-aWa_Uyn6iw3B2-9mVtZ_zidkIT6jLgULAGdY4A0MtWpjto9151l_lRj5It6brRqKNkmp4CGtIXZ87O2JydGuCdUJJKu0_HD691KlpaVZYX2mkhjPtO5SwC4JrWawiUHZ140hrOEazw1ncPqFv6UWn_Wd209HXRHhhROgAPpcZcsDbicONhxZW7DoopdHVwo4kj269JijxjyvpyFLa3LJT5cQmcwHn6CBaTx_HX5fTHOs-Zu5YUwLX1WFeMuIUjl2sbgim-PXaBCW-BmebJS2yWgYqHy_eVG7AXFSPfg7GpP4g5TTpkUkiP7Niowckni3xDpfyL6JCI1j5e9uky_VaS-9X5Q4DiWFMGGYMv4PbvBVn_5ZyNyqw39VrnCDakLaDb3GZRGYPRx_Sz9AWhDVEHFN7YLFxL_gpjMo1novqXSZRvC7C-lwtNT40-ZtAaSCqBE4GP5YPQqN_3BmJKZVN7mCvfW7dpBxu1gApF5gXFAepUf7UpMkCk98E3R99W9sK0YsBAu3U2wnYI4O2grzQnOOAwk3zfYbCP30stCVbidljNlUeMKCgzPpOjG5B",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJsV4cnfzBDDkRptPkKPMqBvA",
+    "plus_code": {
+      "compound_code": "CGMM+C2 Greater Noida, Uttar Pradesh, India",
+      "global_code": "7JWVCGMM+C2"
+    },
+    "rating": 5,
+    "reference": "ChIJsV4cnfzBDDkRptPkKPMqBvA",
+    "scope": "GOOGLE",
+    "types": ["hospital", "health", "point_of_interest", "establishment"],
+    "user_ratings_total": 23,
+    "vicinity": "BASEMENT FLOOR, GIMS, Greater Noida"
+  },
+  {
+    "business_status": "CLOSED_TEMPORARILY",
+    "geometry": {
+      "location": { "lat": 28.43398599999999, "lng": 77.51503 },
+      "viewport": {
+        "northeast": { "lat": 28.4353774802915, "lng": 77.5164958302915 },
+        "southwest": { "lat": 28.43267951970849, "lng": 77.5137978697085 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+    "icon_background_color": "#F88181",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+    "name": "AIM Clinic",
+    "permanently_closed": true,
+    "place_id": "ChIJ7ztRu7LBDDkRxtydL8GQnKs",
+    "plus_code": {
+      "compound_code": "CGM8+H2 Greater Noida, Uttar Pradesh, India",
+      "global_code": "7JWVCGM8+H2"
+    },
+    "rating": 4,
+    "reference": "ChIJ7ztRu7LBDDkRxtydL8GQnKs",
+    "scope": "GOOGLE",
+    "types": ["hospital", "health", "point_of_interest", "establishment"],
+    "user_ratings_total": 1,
+    "vicinity": "Flat No.-12 GF-1, ATS Green Paradiso Chi-4,, Greater Noida"
+  },
+  {
+    "business_status": "CLOSED_TEMPORARILY",
+    "geometry": {
+      "location": { "lat": 28.4285678, "lng": 77.5086122 },
+      "viewport": {
+        "northeast": { "lat": 28.4299111802915, "lng": 77.5099502802915 },
+        "southwest": { "lat": 28.4272132197085, "lng": 77.50725231970848 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+    "icon_background_color": "#F88181",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+    "name": "Dr.Faizi",
+    "permanently_closed": true,
+    "place_id": "ChIJ3xmFLbrBDDkRK0QT5wgKNbw",
+    "plus_code": {
+      "compound_code": "CGH5+CC Greater Noida, Uttar Pradesh, India",
+      "global_code": "7JWVCGH5+CC"
+    },
+    "reference": "ChIJ3xmFLbrBDDkRK0QT5wgKNbw",
+    "scope": "GOOGLE",
+    "types": ["hospital", "health", "point_of_interest", "establishment"],
+    "vicinity": "near amarpali castle, Sector, Chi V, Greater Noida"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 28.4343511, "lng": 77.5350598 },
+      "viewport": {
+        "northeast": { "lat": 28.4357317802915, "lng": 77.53641478029151 },
+        "southwest": { "lat": 28.43303381970849, "lng": 77.53371681970849 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+    "icon_background_color": "#F88181",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+    "name": "Family Pharmacy",
+    "place_id": "ChIJmUoP3LTBDDkRYn8JV6hVD1c",
+    "reference": "ChIJmUoP3LTBDDkRYn8JV6hVD1c",
+    "scope": "GOOGLE",
+    "types": ["hospital", "health", "point_of_interest", "establishment"],
+    "vicinity": "Family Pharmacy, near gims hospital, University Road, Greater Noida"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 28.4348165, "lng": 77.5352527 },
+      "viewport": {
+        "northeast": { "lat": 28.4361661302915, "lng": 77.5365845802915 },
+        "southwest": { "lat": 28.4334681697085, "lng": 77.5338866197085 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+    "icon_background_color": "#F88181",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+    "name": "Swami Shri Sudarshan Acharya Hospital",
+    "opening_hours": { "open_now": true },
+    "photos": [
+      {
+        "height": 768,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/107775077164723683813\">Swami Shri Sudarshan Acharya Hospital</a>"
+        ],
+        "photo_reference": "AeeoHcJ0AERVi4W2vf9r1jYzmhV2yhPFHuM0z0mPQO6TK-CY0-INwaV-bfOehlyzUbny4aibMfS3Fz4yWW2t1YYNNyrVa52c-l99wImkBAnPJPWix0CROy7oGmljNLeuEqQ4Yl4PSCDXQ4BA5h1hFceLWekOoJrqqjZVvvD96qxU3MXQ5z5X6sKK6A1liX0Ov9rtJN8tROaoct24-DtjeBdCuAJl5Dn6nRe5MRn4quvSbQNINqQqwokQc5Z8yEiXEeA_xaRElCl1zKG77fwdd3xmTq3B8yTU5QP8gTkVS4ph-RP6W9n0vogZwjQt5C1uBNEC-BMKe5BB49Y",
+        "width": 1024
+      }
+    ],
+    "place_id": "ChIJJWtt0lzADDkRWRAzhZbEY6g",
+    "plus_code": {
+      "compound_code": "CGMP+W4 Greater Noida, Uttar Pradesh, India",
+      "global_code": "7JWVCGMP+W4"
+    },
+    "rating": 4.3,
+    "reference": "ChIJJWtt0lzADDkRWRAzhZbEY6g",
+    "scope": "GOOGLE",
+    "types": ["hospital", "health", "point_of_interest", "establishment"],
+    "user_ratings_total": 9,
+    "vicinity": "Gali Number 1 University Road, Block E, Surajpur Site V, Greater Noida"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 28.43681089999999, "lng": 77.53755199999999 },
+      "viewport": {
+        "northeast": { "lat": 28.4380534802915, "lng": 77.5388596302915 },
+        "southwest": { "lat": 28.4353555197085, "lng": 77.53616166970848 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+    "icon_background_color": "#F88181",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+    "name": "City Medical Store",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 1152,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/104911285283859778466\">City Medical Store</a>"
+        ],
+        "photo_reference": "AeeoHcKpi9J2JAodvbyx4sbUlYTktZYm3Mcl7FK3xx_RyPHkeugBl30_eN0DCab7U8_s8D2zLweZ2fDkLTksqCTprbZdRsGUcaDKHs6cLYPQ7QdlL-VWcJreB1sQVWD6CYQrCMF5Mk-OH8WS1FsNXdNqdbN2M4rVxYgaeUuh2drgPdctVbmHudmjj2L2YgHf0fpbW3L5LAY95P9_u_umrAh-Bjb4vCpUT5tO6_CKT_3CGCwHi48F6YYoIGkkOt6yRCn_5ah207qFTEshAlUutMuhSyLjiobWoRfAzgAe3re9snrbVw3GtVkZjgCOkiJWSViCIdizCppg1cY",
+        "width": 2048
+      }
+    ],
+    "place_id": "ChIJPQAAwELADDkRQxmA_Uy40sU",
+    "plus_code": {
+      "compound_code": "CGPQ+P2 Greater Noida, Uttar Pradesh, India",
+      "global_code": "7JWVCGPQ+P2"
+    },
+    "rating": 4,
+    "reference": "ChIJPQAAwELADDkRQxmA_Uy40sU",
+    "scope": "GOOGLE",
+    "types": ["hospital", "health", "point_of_interest", "establishment"],
+    "user_ratings_total": 1,
+    "vicinity": "Bhati Complex, infront of Side 5 gate, near Meet Market, Kasna Road, Greater Noida"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": { "lat": 28.435154, "lng": 77.540157 },
+      "viewport": {
+        "northeast": { "lat": 28.4365112802915, "lng": 77.5415041302915 },
+        "southwest": { "lat": 28.4338133197085, "lng": 77.5388061697085 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+    "icon_background_color": "#F88181",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+    "name": "Homeopathy Chikitsa AND Research Centre",
+    "opening_hours": { "open_now": false },
+    "photos": [
+      {
+        "height": 1200,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/113409929039201634029\">Dr.Anamika Bakshi</a>"
+        ],
+        "photo_reference": "AeeoHcKRRYbqkDYvO7JL3R3VZQj9t9A5Z21P9AkvjUUAa4Oovht44sHlWovaT7jFrA8M6saSaTv6Wkh3ILYfONaiTOU53F92V-EDUfFRR_DX_MOH0X-x5jxvkMyezV5Emw86qtaO3reyHA9OrGebo9fU2I0XaHTinMDosFLJO6vN7pG9X-KFApBaT6HkOuYkeT4l7x9LNd7I8QQuejTJIRI0JIMcwBUX0m5H9hmHA8C-9q7zOs00ka6xVbnHwoKBZsD199GBDVJEIIebv-YQBgd7E6E2VFXc-nffV909QbmHywwkDM3SQ9NJwJbiw8V6DkVO8QXQG4VaoMGtAiLRKXWW7oIQlq_vEpcl8nWYqDhQp8P1Fh2DG-_McIZbuPFG0E51aw53Pp7uN47iOH3OwQWTsBI5mItr8saqgn2ZqRluy4djOXv8uRTCQcbFB9lLYPqBbZegsVJwg_4ntyuWi97-RVVpbY74jB5f0lz5pCBMfl1E-q41Jy78MPz9TXx7W1hDweIYh41GR5litVKlXPdbixZrainA4DGl0bkqalPT-fGXMDh2qNdAEzPBzg2spnJwWViZllceEwCIHQM7NwcmRrzDxpyHDahttMTZAxgeKt1xyD-WsYmp1GTzuq5-NLZQ1dZJoA",
+        "width": 1600
+      }
+    ],
+    "place_id": "ChIJl5bvtvbBDDkRBfU9EweXEeI",
+    "rating": 5,
+    "reference": "ChIJl5bvtvbBDDkRBfU9EweXEeI",
+    "scope": "GOOGLE",
+    "types": ["hospital", "health", "point_of_interest", "establishment"],
+    "user_ratings_total": 213,
+    "vicinity": "CGPR+337, Block L, Surajpur Site V, Greater Noida"
+  }
+]

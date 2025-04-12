@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 
 import HospitalMap from "../Components/HospitalMap";
 
+import { slugify } from "../utils/slugify";
+
 export default function Map() {
   const [hospitals, setHospitals] = useState([]);
   const [nearestHospitals, setNearestHospitals] = useState([]);
@@ -53,13 +55,6 @@ export default function Map() {
   useEffect(() => {
     getApi();
   }, []);
-
-  // Slugify helper
-  const slugify = (name) =>
-    name
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, "-")
-      .replace(/(^-|-$)/g, "");
 
   return (
     <div className="flex h-screen w-screen">

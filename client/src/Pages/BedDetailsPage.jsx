@@ -48,44 +48,44 @@ const BedDetailsPage = () => {
   };
 
   return (
-    <div className="p-6 bg-gray-100 min-h-screen">
-      <div className="flex justify-between items-center mb-4">
+    <div className="bg-gradient-to-r from-green-100 to-green-200 min-h-screen p-8">
+      <div className="flex justify-between items-center mb-6">
         <button onClick={() => navigate(-1)} className="text-sm text-blue-600">
           ← Back
         </button>
         <button
           onClick={generateRandomPatient}
-          className="bg-green-500 text-white px-4 py-2 rounded shadow"
+          className="bg-green-500 text-white px-4 py-2 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
         >
           + Generate Patient
         </button>
       </div>
 
-      <h2 className="text-2xl font-bold mb-4 capitalize">
+      <h2 className="text-3xl font-bold mb-6 capitalize text-gray-800">
         {bedType} Beds - Patient List
       </h2>
 
-      <div className="bg-white p-4 rounded shadow">
+      <div className="bg-white p-6 rounded-xl shadow-lg">
         {patients.length > 0 ? (
-          <table className="w-full text-left">
+          <table className="w-full text-left border-collapse">
             <thead>
-              <tr className="text-gray-600">
-                <th>Name</th>
-                <th>Bed Type</th>
-                <th>Reason</th>
-                <th></th>
+              <tr className="bg-gray-100 text-gray-700">
+                <th className="p-4">Name</th>
+                <th className="p-4">Bed Type</th>
+                <th className="p-4">Reason</th>
+                <th className="p-4"></th>
               </tr>
             </thead>
             <tbody>
               {patients.map((patient) => (
                 <tr key={patient._id} className="border-t hover:bg-gray-50">
-                  <td className="py-2">{patient.patientName}</td>
-                  <td>{patient.patientBedType.toUpperCase()}</td>
-                  <td>{patient.patientReasonForVisit}</td>
-                  <td>
+                  <td className="py-3 px-4">{patient.patientName}</td>
+                  <td className="py-3 px-4 text-uppercase">{patient.patientBedType}</td>
+                  <td className="py-3 px-4">{patient.patientReasonForVisit}</td>
+                  <td className="py-3 px-4">
                     <button
                       onClick={() => releasePatient(patient._id)}
-                      className="bg-red-500 text-white px-3 py-1 rounded"
+                      className="bg-red-500 text-white px-4 py-2 rounded-xl hover:bg-red-600 transition-all duration-300"
                     >
                       Release
                     </button>

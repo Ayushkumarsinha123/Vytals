@@ -39,15 +39,15 @@ const OPDRegistrationForm = ({ doctorInfo, onClose }) => {
   };
 
   return (
-    <div className="bg-gray-100 p-4 rounded mt-6 shadow-lg">
-      <h3 className="text-lg font-semibold mb-4">
+    <div className="bg-gradient-to-r from-green-100 to-green-200 p-6 rounded-lg shadow-lg">
+      <h3 className="text-2xl font-semibold text-green-800 mb-6">
         Book Appointment - {doctorInfo.department} ({doctorInfo.doctor})
       </h3>
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-6">
         <input
           name="patientName"
           placeholder="Full Name"
-          className="w-full p-2 border rounded"
+          className="w-full p-3 border border-green-300 rounded-lg focus:ring-2 focus:ring-green-500"
           value={formData.patientName}
           onChange={handleChange}
           required
@@ -55,14 +55,14 @@ const OPDRegistrationForm = ({ doctorInfo, onClose }) => {
         <input
           name="contact"
           placeholder="Contact Number"
-          className="w-full p-2 border rounded"
+          className="w-full p-3 border border-green-300 rounded-lg focus:ring-2 focus:ring-green-500"
           value={formData.contact}
           onChange={handleChange}
         />
         <input
           name="reasonForVisit"
           placeholder="Reason for Visit"
-          className="w-full p-2 border rounded"
+          className="w-full p-3 border border-green-300 rounded-lg focus:ring-2 focus:ring-green-500"
           value={formData.reasonForVisit}
           onChange={handleChange}
           required
@@ -70,14 +70,14 @@ const OPDRegistrationForm = ({ doctorInfo, onClose }) => {
         <input
           name="appointmentDate"
           type="date"
-          className="w-full p-2 border rounded"
+          className="w-full p-3 border border-green-300 rounded-lg focus:ring-2 focus:ring-green-500"
           value={formData.appointmentDate}
           onChange={handleChange}
           required
         />
         <select
           name="timeSlot"
-          className="w-full p-2 border rounded"
+          className="w-full p-3 border border-green-300 rounded-lg focus:ring-2 focus:ring-green-500"
           value={formData.timeSlot}
           onChange={handleChange}
           required
@@ -88,17 +88,17 @@ const OPDRegistrationForm = ({ doctorInfo, onClose }) => {
           ))}
         </select>
 
-        <div className="flex justify-end space-x-2">
+        <div className="flex justify-end space-x-4">
           <button
             type="button"
             onClick={onClose}
-            className="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400"
+            className="px-6 py-3 bg-gray-300 text-gray-800 rounded-lg hover:bg-gray-400 transition"
           >
             Cancel
           </button>
           <button
             type="submit"
-            className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
+            className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition"
           >
             Book Appointment
           </button>

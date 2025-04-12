@@ -44,16 +44,16 @@ const HospitalAnalyticsDashboard = () => {
   console.log(analyticsData);
 
   return (
-    <div className="p-6 bg-gray-100 min-h-screen space-y-10">
-      <h1 className="text-3xl font-bold text-center text-green-700 mb-4">
+    <div className="bg-gradient-to-r from-green-100 to-green-200 min-h-screen p-8 space-y-10">
+      <h1 className="text-4xl font-bold text-center text-green-800 mb-6">
         Hospital Analytics Dashboard 📊
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Daily OPD Visits */}
-        <div className="bg-white p-4 rounded shadow">
-          <h2 className="font-semibold text-lg mb-2">Daily OPD Visits</h2>
-          <LineChart width={400} height={250} data={analyticsData.dailyVisits}>
+        <div className="bg-white p-6 rounded-xl shadow-lg flex justify-center">
+          <h2 className="font-semibold text-lg mb-4 text-gray-700">Daily OPD Visits</h2>
+          <LineChart width={350} height={250} data={analyticsData.dailyVisits}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="date" />
             <YAxis />
@@ -63,9 +63,9 @@ const HospitalAnalyticsDashboard = () => {
         </div>
 
         {/* Queue Trends */}
-        <div className="bg-white p-4 rounded shadow">
-          <h2 className="font-semibold text-lg mb-2">Queue Trends</h2>
-          <BarChart width={400} height={250} data={analyticsData.queueTrends}>
+        <div className="bg-white p-6 rounded-xl shadow-lg flex justify-center">
+          <h2 className="font-semibold text-lg mb-4 text-gray-700">Queue Trends</h2>
+          <BarChart width={350} height={250} data={analyticsData.queueTrends}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="department" />
             <YAxis />
@@ -75,9 +75,9 @@ const HospitalAnalyticsDashboard = () => {
         </div>
 
         {/* Avg Waiting Time */}
-        <div className="bg-white p-4 rounded shadow">
-          <h2 className="font-semibold text-lg mb-2">Avg Waiting Time</h2>
-          <BarChart width={400} height={250} data={analyticsData.waitingTimes}>
+        <div className="bg-white p-6 rounded-xl shadow-lg flex justify-center">
+          <h2 className="font-semibold text-lg mb-4 text-gray-700">Avg Waiting Time</h2>
+          <BarChart width={350} height={250} data={analyticsData.waitingTimes}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="department" />
             <YAxis label={{ value: 'Minutes', angle: -90, position: 'insideLeft' }} />
@@ -87,8 +87,8 @@ const HospitalAnalyticsDashboard = () => {
         </div>
 
         {/* Feedback Pie Chart */}
-        <div className="bg-white p-4 rounded shadow">
-          <h2 className="font-semibold text-lg mb-2">Feedback Overview</h2>
+        <div className="bg-white p-6 rounded-xl shadow-lg flex justify-center">
+          <h2 className="font-semibold text-lg mb-4 text-gray-700">Feedback Overview</h2>
           <PieChart width={300} height={250}>
             <Pie
               data={analyticsData.feedbackSummary}

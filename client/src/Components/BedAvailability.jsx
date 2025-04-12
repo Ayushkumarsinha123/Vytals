@@ -14,28 +14,32 @@ const BedAvailability = () => {
   };
 
   return (
-    <div className="bg-white shadow rounded p-4">
-      <h2 className="text-xl font-semibold mb-4">Bed Availability</h2>
-      <ul className="space-y-3">
+    <div className="bg-gradient-to-r from-blue-50 via-blue-100 to-blue-200 rounded-2xl shadow-lg p-6">
+      <h2 className="text-2xl font-semibold mb-6 text-blue-800">🛏️ Bed Availability</h2>
+      <ul className="space-y-4">
         {beds.map((bed, index) => (
           <li
             key={index}
-            className="flex justify-between items-center border p-3 rounded"
+            className={`flex justify-between items-center border p-4 rounded-xl shadow-sm transition-all ease-in-out duration-300 ${
+              bed.available === 0 ? "bg-red-50 border-red-300" : "bg-white border-gray-200"
+            }`}
           >
             <div>
-              <p className="font-medium">{bed.type}</p>
+              <p className="font-medium text-lg text-blue-700">{bed.type}</p>
               <p className="text-sm text-gray-600">
                 {bed.available}/{bed.total} Available
               </p>
             </div>
 
-            {bed.available === 0 && (
+            {bed.available === 0 ? (
               <button
                 onClick={() => handleRequest(bed.type)}
-                className="bg-red-600 text-white px-4 py-1 rounded hover:bg-red-700"
+                className="bg-red-600 text-white px-5 py-2 rounded-full hover:bg-red-700 transition-all duration-300"
               >
                 Request
               </button>
+            ) : (
+              <span className="text-green-600 font-medium">Available</span>
             )}
           </li>
         ))}

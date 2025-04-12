@@ -28,9 +28,12 @@ export default function Map({ userLocation = { lat: 28.4209, lng: 77.5267 } }) {
   // Fetch hospitals with distances and calculate OPD + sorting
   useEffect(() => {
     const fetchHospitals = async () => {
+      const location = userLocation
+        ? userLocation
+        : { lat: 28.4209, lng: 77.5267 };
       try {
         const res = await fetch(
-          `http://localhost:6010/api/v1/get-nearest-hospitals/distances?lat=${userLocation.lat}&lng=${userLocation.lng}`
+          `http://localhost:6010/api/v1/get-nearest-hospitals/distances?lat=${location.lat}&lng=${location.lng}`
         );
         const data = await res.json();
 
@@ -97,7 +100,7 @@ export default function Map({ userLocation = { lat: 28.4209, lng: 77.5267 } }) {
         </ul>
       </div>
       <div className="w-[75%]">
-        <HospitalMap hospitals={hospitals} />
+        <HospitalMap hospitals={hospitals} userLocation={userLocation} />
       </div>
     </div>
   );

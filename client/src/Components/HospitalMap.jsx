@@ -95,6 +95,8 @@ import React, { useEffect } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import L from "leaflet";
 
+import { DEFAULT_CENTER } from "../constants/mapConstant";
+
 // Red icon for the center
 const redIcon = new L.Icon({
   iconUrl:
@@ -131,11 +133,11 @@ function FitBounds({ hospitals }) {
 }
 
 export default function HospitalMap({ hospitals }) {
-  const center = hospitals.length > 0 ? computeCenter(hospitals) : null;
+  const center = DEFAULT_CENTER;
 
   return (
     <MapContainer
-      center={[28.6139, 77.209]}
+      center={[center.lat, center.lng]}
       zoom={13}
       scrollWheelZoom={true}
       className="h-full w-full"

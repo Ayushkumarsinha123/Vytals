@@ -1,10 +1,12 @@
-import React from 'react';
+import React from "react";
 
-const HospitalHeader = () => {
+const HospitalHeader = ({ hospital }) => {
   return (
     <div className="bg-white shadow rounded p-4 text-center">
-      <h1 className="text-3xl font-bold text-green-700">City Care Hospital</h1>
-      <p className="text-gray-600">Downtown, New Delhi</p>
+      <h1 className="text-3xl font-bold text-green-700">
+        {hospital.data.name}
+      </h1>
+      <p className="text-gray-600">{hospital.data.address}</p>
     </div>
   );
 };

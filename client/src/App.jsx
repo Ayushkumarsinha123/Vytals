@@ -52,7 +52,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Map userLocation={userLocation} />} />
-            <Route path="/hospital" element={<HospitalPage />} />
+            <Route path="/hospital/:hospitalId" element={<HospitalPage />} />
             <Route path="/hospitalAdmin" element={<HospitalAdminDashboard />} />
             <Route path="/admin/beds/:bedType" element={<BedDetailsPage />} />
           </Routes>

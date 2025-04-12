@@ -11,6 +11,7 @@ const nearestHospitalRouter = require("./routes/nearestHospitalRoutes");
 const bedAvailableRouter = require("./routes/bedAvailableRoutes")
 const opdRouter = require("./routes/opdRoutes");
 const hospitalRouter = require("./routes/hospitalRoutes");
+const hospitalDetailInfoRoutes = require("./routes/hospitalDetailInfoRoutes");
 
 
 const app = express();
@@ -28,6 +29,7 @@ app.use("/api/v1/get-nearest-hospitals", nearestHospitalRouter);
 app.use("/api/v1/beds", bedAvailableRouter);
 app.use("/api/v1/opd", opdRouter);
 app.use("/api/v1/hospitals", hospitalRouter);
+app.use("/api/v1/hospitalDetails", hospitalDetailInfoRoutes);
 
 
 // app.all() for all the HTTP methods

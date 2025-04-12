@@ -109,4 +109,47 @@ router.get(
   })
 );
 
+router.get(
+  "/distances/:hospitalName",
+  catchAsync(async (req, res, next) => {
+    const { hospitalName } = req.params;
+    console.log(hospitalName);
+
+    // Read data
+    const filePath = path.join(
+      __dirname,
+      "..",
+      "dev-data",
+      "hospitals-distance.json"
+    );
+    const data = fs.readFileSync(filePath, "utf-8");
+    const hospitalsWithDistance = JSON.parse(data);
+
+    // Find hospital by slug or name (flexible matching)
+    const normalizedParam = hospitalName
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-");
+
+    const found = hospitalsWithDistance.find((hospital) => {
+      const slug = hospital.name
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/(^-|-$)/g, "");
+      return slug === normalizedParam;
+    });
+
+    if (!found) {
+      return res.status(404).json({
+        status: "fail",
+        message: `Hospital '${hospitalName}' not found.`,
+      });
+    }
+
+    res.status(200).json({
+      status: "success",
+      data: found,
+    });
+  })
+);
+
 module.exports = router;

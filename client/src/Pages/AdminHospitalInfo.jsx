@@ -1,7 +1,7 @@
 // src/pages/adminHospitalInfo.jsx
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import { useWebSocket } from "../Contexts/WebSocketContext";
 
 const bedData = [
   { type: "ICU", available: 10, total: 15 },
@@ -12,6 +12,7 @@ const bedData = [
 const HospitalAdminDashboard = () => {
   const navigate = useNavigate();
   const [appointments, setAppointments] = useState([]);
+  const socket = useWebSocket();
 
   useEffect(() => {
     const fetchAppointments = async () => {
@@ -23,14 +24,32 @@ const HospitalAdminDashboard = () => {
         console.error("Error fetching appointments:", err);
       }
     };
-  
+
     fetchAppointments();
   }, []);
-  
+
+  useEffect(() => {
+    if (!socket) return;
+
+    socket.onmessage = (event) => {
+      const data = JSON.parse(event.data);
+      if (data.eventType === "BED_REQUEST_ACK") {
+        console.log("Received BED_REQUEST_ACK:", data);
+        // You can update UI here
+      }
+    };
+
+    // Optional: cleanup
+    return () => {
+      socket.onmessage = null;
+    };
+  }, [socket]);
 
   return (
     <div className="p-6 bg-gray-100 min-h-screen">
-      <h1 className="text-2xl font-bold mb-6">CityCare Hospital - Bed Management</h1>
+      <h1 className="text-2xl font-bold mb-6">
+        CityCare Hospital - Bed Management
+      </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
         {bedData.map((bed, index) => (
@@ -40,7 +59,9 @@ const HospitalAdminDashboard = () => {
             className="bg-white p-4 rounded shadow cursor-pointer hover:bg-green-50"
           >
             <h2 className="text-xl font-semibold">{bed.type} Beds</h2>
-            <p className="mt-2 text-gray-700">{bed.available} / {bed.total} Available</p>
+            <p className="mt-2 text-gray-700">
+              {bed.available} / {bed.total} Available
+            </p>
           </div>
         ))}
       </div>
@@ -67,7 +88,9 @@ const HospitalAdminDashboard = () => {
                   <td className="p-2 border">{appt.contact}</td>
                   <td className="p-2 border">{appt.department}</td>
                   <td className="p-2 border">{appt.doctorName}</td>
-                  <td className="p-2 border">{new Date(appt.appointmentDate).toLocaleDateString()}</td>
+                  <td className="p-2 border">
+                    {new Date(appt.appointmentDate).toLocaleDateString()}
+                  </td>
                   <td className="p-2 border">{appt.timeSlot}</td>
                   <td className="p-2 border">{appt.status}</td>
                 </tr>

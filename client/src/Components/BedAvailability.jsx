@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { useWebSocket } from "../Contexts/WebSocketContext";
+import { slugify } from "../utils/slugify";
 
-const BedAvailability = () => {
+const BedAvailability = ({ hospital }) => {
   const socket = useWebSocket(); // Access WebSocket instance from context
 
   const [showModal, setShowModal] = useState(false);
@@ -38,6 +39,7 @@ const BedAvailability = () => {
       patientName: formData.patientName,
       cause: formData.emergencyCause,
       timestamp: new Date().toISOString(),
+      hospitalSlug: slugify(hospital.data.name),
     };
 
     if (socket && socket.readyState === WebSocket.OPEN) {

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
+
 import HospitalMap from "../Components/HospitalMap";
 
 export default function Map() {
@@ -61,9 +63,10 @@ export default function Map() {
         </h2>
         <ul className="space-y-2">
           {nearestHospitals.map((hospital, index) => (
-            <li
+            <Link
               key={index}
-              className="bg-[#2a2a2a] rounded-xl p-3 border border-gray-700 text-sm text-gray-200"
+              to="/hospital"
+              className="block bg-[#2a2a2a] rounded-xl p-3 border border-gray-700 text-sm text-gray-200 hover:bg-[#3a3a3a] transition"
             >
               <p className="font-medium text-white truncate">{hospital.name}</p>
               <div className="flex justify-between mt-1">
@@ -73,7 +76,7 @@ export default function Map() {
               <div className="text-gray-500 text-xs mt-1">
                 ⏱ {hospital.duration}
               </div>
-            </li>
+            </Link>
           ))}
         </ul>
       </div>

@@ -73,36 +73,40 @@ router.get(
     // --------------------------------------------------
     // While using API ----------------------------------
     // --------------------------------------------------
+    // --------------------------------------------------
+    // const { lat, lng } = req.query;
 
-    // const { lat: userLat, lng: userLng } = req.query;
-
-    // if (!userLat || !userLng) {
+    // if (!lat || !lng) {
     //   return res
     //     .status(400)
     //     .json({ message: "User location required (lat & lng)." });
     // }
 
     // // Load hospitals
-    // const filePath = path.join(__dirname, "../dev-data/hospitals.json");
+    // const filePath = path.join(__dirname, "../dev-data/hospitals-details.json");
     // const hospitalData = JSON.parse(fs.readFileSync(filePath, "utf-8"));
 
     // // Prepare destinations
     // const destinations = hospitalData
-    //   .map((hospital) => `${hospital.lat},${hospital.lng}`)
+    //   .map(
+    //     (hospital) =>
+    //       `${hospital.geometry.location.lat},${hospital.geometry.location.lng}`
+    //   )
     //   .join("|");
 
     // // Distance Matrix API call
-    // const url = `https://maps.googleapis.com/maps/api/distancematrix/json?origins=${userLat},${userLng}&destinations=${destinations}&key=${API_KEY}`;
+    // const url = `https://maps.googleapis.com/maps/api/distancematrix/json?origins=${lat},${lng}&destinations=${destinations}&key=${API_KEY}`;
 
     // const response = await axios.get(url);
 
-    // // Merge distances into hospital data
+    // // // Merge distances into hospital data
     // const elements = response.data.rows[0].elements;
     // const hospitalsWithDistance = hospitalData.map((hospital, index) => ({
     //   ...hospital,
     //   distance: elements[index]?.distance?.text || "Unknown",
     //   duration: elements[index]?.duration?.text || "Unknown",
     // }));
+    //------------------------------------------------------------------
 
     // 🔁 Read pre-fetched distance data from local JSON file
     const filePath = path.join(
@@ -112,7 +116,17 @@ router.get(
       "hospitals-distance.json"
     );
     const data = fs.readFileSync(filePath, "utf-8");
-    const hospitalsWithDistance = JSON.parse(data);
+    let hospitalsWithDistance = JSON.parse(data);
+
+    // Getting important INFO
+    hospitalsWithDistance = hospitalsWithDistance.map((place) => ({
+      name: place.name,
+      address: place.vicinity,
+      lat: place.geometry.location.lat,
+      lng: place.geometry.location.lng,
+      distance: place.distance,
+      duration: place.duration,
+    }));
 
     res.status(200).json({
       status: "success",

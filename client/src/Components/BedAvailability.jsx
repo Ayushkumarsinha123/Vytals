@@ -1,16 +1,16 @@
-import React from 'react';
+import React from "react";
 
 const BedAvailability = () => {
   // Sample bed data — this can later come from props or an API
   const beds = [
-    { type: 'General Beds', total: 30, available: 12 },
-    { type: 'ICU Beds', total: 10, available: 0 },
-    { type: 'Emergency Beds', total: 5, available: 0 }, // full
+    { type: "General Beds", total: 30, available: 12 },
+    { type: "ICU Beds", total: 10, available: 0 },
+    { type: "Emergency Beds", total: 5, available: 0 }, // full
   ];
 
   const handleRequest = (bedType) => {
-    alert(`Request sent to arrange more ${bedType}.`);
     // You can replace this with an API call later
+    console.log(bedType);
   };
 
   return (
@@ -18,7 +18,10 @@ const BedAvailability = () => {
       <h2 className="text-xl font-semibold mb-4">Bed Availability</h2>
       <ul className="space-y-3">
         {beds.map((bed, index) => (
-          <li key={index} className="flex justify-between items-center border p-3 rounded">
+          <li
+            key={index}
+            className="flex justify-between items-center border p-3 rounded"
+          >
             <div>
               <p className="font-medium">{bed.type}</p>
               <p className="text-sm text-gray-600">

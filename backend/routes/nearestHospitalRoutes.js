@@ -42,7 +42,6 @@ router.get(
 
       try {
         const hospitals = JSON.parse(data);
-        console.log(hospitals);
 
         res.status(200).json(hospitals);
       } catch (e) {

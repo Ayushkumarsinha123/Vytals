@@ -31,19 +31,33 @@ wss.on("connection", function (ws) {
 
   ws.on("message", (message) => {
     for (let i = 0; i < clients.length; i++) {
-      let clientSocket = clients[i].ws;
+      const clientSocket = clients[i].ws;
 
-      // The collection of connected clients needs to account for the possibility that
-      // the client has gone away, and ensure that before you send a message, there is
-      // still an open WebSocket connection.
       if (clientSocket.readyState === WebSocket.OPEN) {
-        console.log("client [%s]: %s", clients[i].id, message);
-        clientSocket.send(
-          JSON.stringify({
-            id: client_uuid,
-            message: message,
-          })
-        );
+        try {
+          const parsed = JSON.parse(message);
+
+          if (parsed.eventType === "BED_REQUEST") {
+            console.log(
+              `📢 [${parsed.eventType}] from client [${clients[i].id}]: ${parsed.bedType} (${parsed.available} available)`
+            );
+          } else {
+            console.log(
+              `ℹ️ Unknown or unhandled event from client [${clients[i].id}]:`,
+              parsed
+            );
+          }
+
+          // Echo back (or broadcast)
+          clientSocket.send(
+            JSON.stringify({
+              id: client_uuid,
+              message: parsed,
+            })
+          );
+        } catch (err) {
+          console.error("❌ Invalid message format:", message);
+        }
       }
     }
   });

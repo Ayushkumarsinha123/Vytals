@@ -1,5 +1,4 @@
 const AppError = require("../utils/appError");
-
 const APIFeatures = require("../utils/APIFeatures");
 const catchAsync = require("../utils/catchAsync");
 const Patient = require("../models/patientModel");
@@ -13,21 +12,27 @@ exports.getAllPatients = catchAsync(async (req, res, next) => {
 
   const patients = await features.query;
 
-  console.log(patients)
+  const decryptedPatients = patients.map(patient => patient.getDecryptedData());
+
   res.status(200).json({
     status: "success",
-    results: patients.length,
+    results: decryptedPatients.length,
     data: {
-      patients,
+      patients: decryptedPatients,
     },
   });
 });
 
-
 exports.createPatient = catchAsync(async (req, res, next) => {
   const newPatient = await Patient.create(req.body);
+  const decryptedPatient = newPatient.getDecryptedData();
 
-  res.status(201).json({ status: "success", data: { patient: newPatient } });
+  res.status(201).json({
+    status: "success",
+    data: {
+      patient: decryptedPatient,
+    },
+  });
 });
 
 exports.generateRandomPatient = catchAsync(async (req, res, next) => {
@@ -42,10 +47,12 @@ exports.generateRandomPatient = catchAsync(async (req, res, next) => {
     patientBedType: bedType.toLowerCase(),
   });
 
+  const decryptedPatient = patient.getDecryptedData();
+
   res.status(201).json({
     status: "success",
     data: {
-      patient,
+      patient: decryptedPatient,
     },
   });
 });
@@ -60,6 +67,3 @@ exports.deletePatient = catchAsync(async (req, res, next) => {
 
   res.status(204).json({ status: "success", data: null });
 });
-
-
-

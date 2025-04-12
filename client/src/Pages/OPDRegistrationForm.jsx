@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
 const OPDRegistrationForm = ({ doctorInfo, onClose }) => {
   const [formData, setFormData] = useState({
-    name: '',
-    age: '',
-    reason: '',
+    patientName: '',
+    contact: '',
+    reasonForVisit: '',
     timeSlot: '',
+    appointmentDate: '',
   });
 
   const timeSlots = ['10:00 AM', '11:00 AM', '12:30 PM', '2:00 PM', '4:30 PM'];
@@ -14,11 +16,26 @@ const OPDRegistrationForm = ({ doctorInfo, onClose }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert(`Appointment booked with ${doctorInfo.doctor} at ${formData.timeSlot}`);
-    onClose();
-    /// for backend 
+
+    try {
+      await axios.post('http://localhost:6010/api/v1/opd', {
+        patientName: formData.patientName,
+        contact: formData.contact,
+        department: doctorInfo.department,
+        doctorName: doctorInfo.doctor,
+        reasonForVisit: formData.reasonForVisit,
+        timeSlot: formData.timeSlot,
+        appointmentDate: new Date(formData.appointmentDate), // converting to Date object
+      });
+
+      alert(`Appointment booked with ${doctorInfo.doctor} at ${formData.timeSlot}`);
+      onClose();
+    } catch (err) {
+      console.error("Booking failed:", err);
+      alert("Something went wrong while booking. Please try again.");
+    }
   };
 
   return (
@@ -28,27 +45,33 @@ const OPDRegistrationForm = ({ doctorInfo, onClose }) => {
       </h3>
       <form onSubmit={handleSubmit} className="space-y-4">
         <input
-          name="name"
+          name="patientName"
           placeholder="Full Name"
           className="w-full p-2 border rounded"
-          value={formData.name}
+          value={formData.patientName}
           onChange={handleChange}
           required
         />
         <input
-          name="age"
-          type="number"
-          placeholder="Age"
+          name="contact"
+          placeholder="Contact Number"
           className="w-full p-2 border rounded"
-          value={formData.age}
+          value={formData.contact}
           onChange={handleChange}
-          required
         />
         <input
-          name="reason"
+          name="reasonForVisit"
           placeholder="Reason for Visit"
           className="w-full p-2 border rounded"
-          value={formData.reason}
+          value={formData.reasonForVisit}
+          onChange={handleChange}
+          required
+        />
+        <input
+          name="appointmentDate"
+          type="date"
+          className="w-full p-2 border rounded"
+          value={formData.appointmentDate}
           onChange={handleChange}
           required
         />

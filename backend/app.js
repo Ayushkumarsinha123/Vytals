@@ -9,6 +9,7 @@ const globalErrorHandler = require("./controllers/errorController");
 const patientRouter = require("./routes/patientRoutes");
 const nearestHospitalRouter = require("./routes/nearestHospitalRoutes");
 const bedAvailableRouter = require("./routes/bedAvailableRoutes")
+const opdRouter = require("./routes/opdRoutes");
 
 const app = express();
 
@@ -23,6 +24,7 @@ app.use(express.json());
 app.use("/api/v1/patient", patientRouter);
 app.use("/api/v1/get-nearest-hospitals", nearestHospitalRouter);
 app.use("/api/v1/beds", bedAvailableRouter);
+app.use("/api/v1/opd", opdRouter);
 
 
 // app.all() for all the HTTP methods

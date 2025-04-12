@@ -26,9 +26,11 @@ function setupWebSocketServer(server) {
           try {
             const parsed = JSON.parse(message);
 
+            console.log(parsed);
+
             switch (parsed.eventType) {
               case "BED_REQUEST":
-                handleBedRequest(id, parsed);
+                handleBedRequest(id, parsed, getClients(), WebSocket);
                 break;
               default:
                 console.log(`ℹ️ Unknown event from [${id}]:`, parsed);

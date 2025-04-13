@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 import HospitalAdminDashboard from "./Pages/AdminHospitalInfo";
 import BedDetailsPage from "./Pages/BedDetailsPage";
+import HospitalAnalyticsDashboard from "./Pages/HospitalAnalyticsDashboard";
 
 import Map from "./Pages/Map";
 
@@ -55,6 +56,7 @@ function App() {
             <Route path="/hospital/:hospitalId" element={<HospitalPage />} />
             <Route path="/hospitalAdmin" element={<HospitalAdminDashboard />} />
             <Route path="/admin/beds/:bedType" element={<BedDetailsPage />} />
+            <Route path="/admin/analytics" element={<HospitalAnalyticsDashboard />} />
           </Routes>
         </BrowserRouter>
       </WebSocketProvider>
